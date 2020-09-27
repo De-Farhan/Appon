@@ -1,5 +1,11 @@
 $("body").scrollspy({ target: ".menu" });
 
+// collapsed nav bar start
+$(".menu ul li a").on("click", function () {
+  $(".menu .navbar-collapse").collapse("hide");
+});
+// collapsed nav bar end
+
 // fixed nav bar start
 
 $(window).scroll(function () {
